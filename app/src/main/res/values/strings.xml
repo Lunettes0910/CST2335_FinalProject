@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">CST2335_FinalProject</string>
+    <string name="app_name">Final Project</string>
+    <string name="mw_dict_app_name">English Dictionary</string>
+
+    <string name="mw_dict_author">Author: Minh Tran</string>
+    <string name="mw_dict_version">Version 1.0</string>
+
+    <string name="mw_dict_instruction_label">Instructions</string>
+    <string name="mw_dict_instruction_info_1">1. Enter the word you are looking for a definition</string>
+    <string name="mw_dict_instruction_info_2">2. Tap the "Search word" button, the definition will appear if the entered word exists.
+    Otherwise, there will be a notification accordingly.</string>
+    <string name="mw_dict_instruction_info_3">3. Press the arrow button on the right side of the taskbar to go back.</string>
+
+    <string name="mw_dict_menu_about">About</string>
+    <string name="mw_dict_menu_back">Go back</string>
+    <string name="mw_dict_menu_help">Help</string>
+
+    <string name="word_prompt">Enter word:</string>
+    <string name="word_hint">Type word here</string>
+    <string name="search_prompt">Search word</string>
 </resources>

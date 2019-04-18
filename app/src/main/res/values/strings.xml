@@ -1,6 +1,12 @@
 <resources>
-    <string name="app_name">Final Project</string>
+    <string name="app_name">Project</string>
     <string name="mw_dict_app_name">English Dictionary</string>
+
+    <string name="app_menu_app1_label">App #1</string>
+    <string name="app_menu_app2_label">App #2</string>
+    <string name="app_menu_app3_label">App #3</string>
+    <string name="app_menu_app4_label">App #4</string>
+    <string name="app_menu_invalid_app">This app is not available yet.</string>
 
     <string name="mw_dict_author">Author: Minh Tran</string>
     <string name="mw_dict_version">Version 1.0</string>
@@ -15,7 +21,15 @@
     <string name="mw_dict_menu_back">Go back</string>
     <string name="mw_dict_menu_help">Help</string>
 
-    <string name="word_prompt">Enter word:</string>
-    <string name="word_hint">Type word here</string>
-    <string name="search_prompt">Search word</string>
+    <string name="mw_dict_word_prompt">Enter word:</string>
+    <string name="mw_dict_word_hint">Type word here</string>
+    <string name="mw_dict_history_prompt">Search history</string>
+    <string name="mw_dict_search_prompt">Search word</string>
+    <string name="mw_dict_invalid_word">Cannot find this word.</string>
+    <string name="mw_dict_connection_issue">Cannot connect to the Internet.</string>
+    <string name="mw_dict_other_error">An error has occurred.</string>
+
+    <string name="mw_dict_default_word">Searched word</string>
+    <string name="mw_dict_default_word_pronunciation">Searched pronunciation</string>
+    <string name="mw_dict_default_word_definition">Searched definition</string>
 </resources>

@@ -1,9 +1,16 @@
 package com.example.cst2335_finalproject;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -23,12 +30,16 @@ public class AppMenuActivity extends AppCompatActivity {
     final static String APP_3_AUTHOR = "Weihao Liao";
     final static String APP_4_AUTHOR = "???";
 
+    protected Toolbar appToolbar;
     protected AppListAdapter appListAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.app_menu_activity);
+        setContentView(R.layout.app_menu_main_activity);
+
+        appToolbar = findViewById(R.id.appToolbar);
+        setSupportActionBar(appToolbar);
 
         ListView appList = findViewById(R.id.appListView);
         appListAdapter = new AppListAdapter();
@@ -53,21 +64,55 @@ public class AppMenuActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate menu items in ActionBar
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.app_menu_activity, menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent testingApp;
+        switch(item.getItemId()) {
+            case R.id.app_menu_app1:
+                testingApp = new Intent(this, MWDictMainActivity.class);
+                startActivity(testingApp);
+                break;
+
+            case R.id.app_menu_app2:
+            case R.id.app_menu_app3:
+            case R.id.app_menu_app4:
+                Toast.makeText(this, "This application is not available yet.", Toast.LENGTH_LONG).show();
+                break;
+        }
+
+        return true;
+    }
+
     protected class AppListAdapter extends BaseAdapter {
         @Override
-        public int getCount() { return APP_COUNT; }
+        public int getCount() {
+            return APP_COUNT;
+        }
 
         @Override
-        public Object getItem(int position) { return null; }
+        public Object getItem(int position) {
+            return null;
+        }
 
         @Override
-        public long getItemId(int position) { return position; }
+        public long getItemId(int position) {
+            return position;
+        }
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             LayoutInflater inflater = getLayoutInflater();
 
-            View newView = inflater.inflate(android.R.layout.two_line_list_item, parent, false );
+            View newView = inflater.inflate(android.R.layout.two_line_list_item, parent, false);
 
             TextView appText = newView.findViewById(android.R.id.text1);
             TextView appSubtitle = newView.findViewById(android.R.id.text2);

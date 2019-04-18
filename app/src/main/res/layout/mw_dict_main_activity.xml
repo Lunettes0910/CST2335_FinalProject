@@ -17,17 +17,44 @@
         android:id="@+id/mwDictWordPromptLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/word_prompt" />
+        android:text="@string/mw_dict_word_prompt" />
 
     <EditText
         android:id="@+id/mwDictWordInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/word_hint"/>
+        android:hint="@string/mw_dict_word_hint"/>
 
-    <Button
-        android:id="@+id/mwDictSearchButton"
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/search_prompt"/>
+        android:rowCount="1"
+        android:columnCount="2">
+        <Button
+            android:id="@+id/mwDictHistoryButton"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="0.5"
+            android:text="@string/mw_dict_history_prompt" />
+        <Button
+            android:id="@+id/mwDictSearchButton"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="0.5"
+            android:text="@string/mw_dict_search_prompt" />
+    </GridLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/mwDictConnectionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
 </LinearLayout>

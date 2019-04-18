@@ -20,5 +20,5 @@
         android:title="@string/mw_dict_menu_back"
         android:icon="@drawable/mw_dict_icons8_undo_64"
         android:orderInCategory="30"
-        app:showAsAction="always"/>
+        app:showAsAction="always" />
 </menu>

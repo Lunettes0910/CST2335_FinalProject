@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bài tập lớn</string>
+    <string name="mw_dict_app_name">Từ điển Anh-Anh</string>
+
+    <string name="app_menu_app1_label">Ứng dụng #1</string>
+    <string name="app_menu_app2_label">Ứng dụng #2</string>
+    <string name="app_menu_app3_label">Ứng dụng #3</string>
+    <string name="app_menu_app4_label">Ứng dụng #4</string>
+    <string name="app_menu_invalid_app">Ứng dụng này chưa hoàn thành.</string>
+
+    <string name="mw_dict_author">Người viết: Minh Tran</string>
+    <string name="mw_dict_version">Phiên bản 1.0</string>
+
+    <string name="mw_dict_instruction_label">Hướng dẫn</string>
+    <string name="mw_dict_instruction_info_1">1. Nhập từ bạn cần tìm định nghĩa</string>
+    <string name="mw_dict_instruction_info_2">2. Nhấn nút "Tìm" button, định nghĩa sẽ xuất hiện nếu từ đó tồn tại.
+    Nếu không, một thông báo sẽ xuất hiện.</string>
+    <string name="mw_dict_instruction_info_3">3. Nhấn nút hình mũi tên trên thanh công cụ để quay lại.</string>
+
+    <string name="mw_dict_menu_about">Thông tin</string>
+    <string name="mw_dict_menu_back">Quay lại</string>
+    <string name="mw_dict_menu_help">Trợ giúp</string>
+
+    <string name="mw_dict_word_prompt">Nhập từ:</string>
+    <string name="mw_dict_word_hint">Viết ở đây</string>
+    <string name="mw_dict_history_prompt">Lịch sử</string>
+    <string name="mw_dict_search_prompt">Tìm</string>
+    <string name="mw_dict_invalid_word">Không tìm thấy từ này.</string>
+    <string name="mw_dict_connection_issue">Không có kết nối mạng.</string>
+    <string name="mw_dict_other_error">Đã có lỗi xảy ra.</string>
+
+    <string name="mw_dict_default_word">Searched word</string>
+    <string name="mw_dict_default_word_syllables">Word syllables</string>
+    <string name="mw_dict_default_word_pronunciation">Searched pronunciation</string>
+    <string name="mw_dict_default_word_type">Noun</string>
+    <string name="mw_dict_default_word_definition">Searched definition</string>
+    <string name="mw_dict_delete_prompt">Delete word</string>
+</resources>

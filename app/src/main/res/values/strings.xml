@@ -30,6 +30,9 @@
     <string name="mw_dict_other_error">An error has occurred.</string>
 
     <string name="mw_dict_default_word">Searched word</string>
+    <string name="mw_dict_default_word_syllables">Word syllables</string>
     <string name="mw_dict_default_word_pronunciation">Searched pronunciation</string>
+    <string name="mw_dict_default_word_type">Noun</string>
     <string name="mw_dict_default_word_definition">Searched definition</string>
+    <string name="mw_dict_delete_prompt">Delete word</string>
 </resources>

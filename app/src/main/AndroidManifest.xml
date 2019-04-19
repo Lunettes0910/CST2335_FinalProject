@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MWDictMainActivity" />
+        <activity android:name=".MWDictEmptyFragmentActivity" />
+        <activity android:name=".MWDictHistoryActivity" />
     </application>
 
 </manifest>

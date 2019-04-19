@@ -4,14 +4,10 @@ import java.util.LinkedList;
 
 public class MWDictWord {
     String word, syllables, pronunciation, wordType;
-    LinkedList<String> definitionList;
-
-    public MWDictWord() {
-        definitionList = new LinkedList<String>();
-    }
+    String definitionList;
 
     public MWDictWord(String newWord, String newSyllables, String newPronunciation,
-                      String newWordType, LinkedList<String> newDefinitionList) {
+                      String newWordType, String newDefinitionList) {
         word = newWord;
         syllables = newSyllables;
         pronunciation = newPronunciation;
@@ -35,7 +31,7 @@ public class MWDictWord {
         this.wordType = wordType;
     }
 
-    public void setDefinitionList(LinkedList<String> definitionList) {
+    public void setDefinitionList(String definitionList) {
         this.definitionList = definitionList;
     }
 
@@ -55,7 +51,7 @@ public class MWDictWord {
         return wordType;
     }
 
-    public LinkedList<String> getDefinitionList() {
+    public String getDefinitionList() {
         return definitionList;
     }
 }

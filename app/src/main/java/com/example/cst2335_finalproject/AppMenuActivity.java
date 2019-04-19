@@ -26,9 +26,9 @@ public class AppMenuActivity extends AppCompatActivity {
     final static String APP_4_NAME = "New York Times Article Search";
 
     final static String APP_1_AUTHOR = "Minh Tran";
-    final static String APP_2_AUTHOR = "???";
+    final static String APP_2_AUTHOR = "N/A";
     final static String APP_3_AUTHOR = "Weihao Liao";
-    final static String APP_4_AUTHOR = "???";
+    final static String APP_4_AUTHOR = "N/A";
 
     protected Toolbar appToolbar;
     protected AppListAdapter appListAdapter;
